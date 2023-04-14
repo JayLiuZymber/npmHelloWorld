@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- 
+將 React 加入到網頁 – React
+https://zh-hant.reactjs.org/docs/add-react-to-a-website.html
+ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="like_button_container"></div>
+
+    <!-- 載入 React。 -->
+    <!-- 注意：在發佈應用程式前，請把「development.js」替換成「production.min.js」。 -->
+    <!-- <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script> -->
+    <!-- 載入我們的 React component。-->
+    <!-- <script src="like_button.js"></script> -->
+    
+    <!-- 
+How to Set Up Minification
+https://gist.github.com/gaearon/42a2ffa41b8319948f9be4076286e1f3
+
+$npm init -y
+$npm install terser
+$npx terser -c -m -o like_button.min.js -- like_button.js
+-->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="like_button.min.js"></script>
+
+</body>
+</html>
